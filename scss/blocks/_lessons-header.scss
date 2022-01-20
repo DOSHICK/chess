@@ -1,0 +1,135 @@
+// lessons-header.scss
+.lessons-header {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 10px 0px 50px -20px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+
+  .task {
+    display: none;
+    width: 100%;
+    padding: 60px 80px 0px 60px;
+
+    @media (max-width:1250px) {
+      padding: 30px 40px 0px 30px;
+    }
+
+    &.current {
+      display: block;
+    }
+
+    h2 {
+      padding: 0px 0px 15px 0px;
+    }
+
+    .tasks__progress {
+      width: 100%;
+      padding: 15px 0px 0px 0px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .tasks__list {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        @media (max-width:620px){
+            max-width: 600px;
+            overflow-x:scroll; 
+            position:relative;
+        }
+        .tasks__item {
+          padding: 0px 24px 9px 24px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          border-bottom: 3px #00000000 solid;
+          @media (max-width:620px){
+            flex-grow: 0;
+            flex-shrink: 0;
+          }
+
+          &:hover {
+            h3 {
+              color: #646464;
+            }
+          }
+
+
+          h3 {
+            font-size: 16px;
+            line-height: 140%;
+            color: #A9A9A9;
+          }
+
+          span {
+            font-size: 10px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #787474;
+          }
+
+          &:nth-last-child(1) {
+            padding-right: 0px;
+          }
+
+          &:first-child {
+            padding-left: 0px;
+          }
+
+          &.wrong {
+
+            span {
+              color: #DE3030;
+            }
+
+            &:hover {
+              border-bottom: 3px #B94919 solid;
+            }
+          }
+
+          &.right {
+            span {
+              color: #0EAC1E;
+            }
+
+            &:hover {
+              border-bottom: 3px #0EAC1E solid;
+            }
+          }
+
+          &.current {
+            h3 {
+              color: #000000;
+            }
+
+            & {
+              border-bottom: 3px #787474 solid;
+            }
+
+            &.wrong {
+              border-bottom: 3px #B94919 solid;
+            }
+
+            &.right {
+              border-bottom: 3px #0EAC1E solid;
+            }
+
+          }
+        }
+      } 
+    }
+  }
+}
+
+p.task__info {
+  display: block;
+  padding: 0px 0px 12px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  @media (max-width:800px){
+      display: none;
+  }
+}
