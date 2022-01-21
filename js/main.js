@@ -1,3 +1,5 @@
+//main.js
+
 //course-bar
 let courseList = document.querySelector(".course-bar__list");
 let courseItem = courseList.querySelectorAll(".course-bar__item");
@@ -21,7 +23,7 @@ for (let Counter = 0; Counter < courseItem.length; Counter++) {
 }
 //
 
-//перебор массива для синхронизации
+//перебор массива для синхронизации exerciseItem и lessonsItem
 for (let Counter = 0; Counter < exerciseItem.length; Counter++) {
   exerciseItem[Counter].onclick = function () {
     let list = this.parentNode;
@@ -30,7 +32,7 @@ for (let Counter = 0; Counter < exerciseItem.length; Counter++) {
   }
 }
 
-
+// Функция по смене current или любого другого класса (остальное в readme.md)
 function changeCurrent(clickedItem, List, Selector, Class) {
   let currentItem = List.querySelector(Selector);
   if (currentItem === clickedItem) {
