@@ -155,7 +155,7 @@ h4 {
           box-shadow: 10px 0px 50px -20px rgba(0, 0, 0, 0.05);
   background: #ffffff;
   position: fixed;
-  max-height: 100vh;
+  height: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -826,8 +826,21 @@ p.task__info {
 }
 
 footer {
-  padding: 20px 30px 30px 70px;
+  padding: 40px 30px 30px 70px;
   background: #f7f8f9;
+}
+
+footer .footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer__nav .footer__list {
@@ -838,6 +851,7 @@ footer .footer__nav .footer__list {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0px 55px 0px 0px;
 }
 
 footer .footer__nav .footer__list .footer__item {
@@ -859,6 +873,17 @@ footer .footer__nav .footer__list .footer__item a {
 }
 
 footer .footer__nav .footer__list .footer__item a:hover {
-  color: #5c5c5c;
+  color: #030303;
+}
+
+footer .footer__nav .footer__contacts a {
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+footer .footer__nav .footer__contacts a :hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 /*# sourceMappingURL=main.css.map */

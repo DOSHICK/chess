@@ -1,12 +1,16 @@
 footer {
-  padding: 20px 30px 30px 70px;
+  padding: 40px 30px 30px 70px;
   background: #f7f8f9;
 
 
   .footer__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     .footer__list {
       display: flex;
       flex-direction: row;
+      padding: 0px 55px 0px 0px;
 
       // align-items: center;
       .footer__item {
@@ -24,12 +28,23 @@ footer {
           transition: all 0.3s ease 0s;
           color: #989695;
           &:hover{
-          color: #5c5c5c;
+          color: #030303;
           }
         }
       }
     }
+    .footer__contacts {
+      a{
+        margin-right: 10px;
+        transition: all 0.3s ease 0s;
+        :hover{
+          transform: scale(1.2, 1.2);
+        }
+        img{
 
+        }
+      }
+    }
   }
 
 }
