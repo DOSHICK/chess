@@ -14,8 +14,8 @@
 <body>
   <div class="wrapper">
     <main>
-      <div class="course-bar">
-        <div class="course-bar__header ">
+      <div id="course-bar" class="course-bar">
+        <div id="course-bar__header" class="course-bar__header ">
           <button id="burger-btn" class="course-bar__btn">
             <div class="course-bar__wrapper">
               <img class="course-bar__arrow" src="./img/arrow-left.svg" alt="arrow left">
@@ -26,71 +26,71 @@
               Уровень:<span>5</span>; попытки:<span>2</span>
             </p>
           </button>
-          <div id="course-bar__body"  class="course-bar__body">
-            <ul id="course-bar__list" class="course-bar__list">
-              <li class="course-bar__item done">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 1</h4>
-                    <p>Дебют 1 е4 е5 белыми, 1 часть</p>
-                  </div>
-              </li>
-              <li class="course-bar__item done">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 2</h4>
-                    <p>Дебют белыми 1.е4е5<br>Задачи для решения по первой лекции</p>
-                  </div>
-              </li>
-              <li class="course-bar__item done">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 3</h4>
-                    <p>дебют белыми 1, е4 е5</p>
-                  </div>
-              </li>
-              <li class="course-bar__item current">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 4</h4>
-                    <p>Дебют белыми 1.е4 е5.<br>
-                      Решаем задачи по пройденной теме</p>
-                  </div>
-              </li>
-              <li class="course-bar__item">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 5</h4>
-                    <p>Решаем задачи с маневром черных</p>
-                  </div>
-              </li>
-              <li class="course-bar__item">
-                  <label>
-                    <img src="./img/succes-icon.svg" alt="succes icon">
-                    <input type="checkbox" value="1">
-                  </label>
-                  <div class="course-bar__block">
-                    <h4>Урок 6</h4>
-                    <p>Решаем задачи с маневром черных</p>
-                  </div>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div id="course-bar__body"  class="course-bar__body">
+          <ul id="course-bar__list" class="course-bar__list">
+            <li class="course-bar__item done">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 1</h4>
+                  <p>Дебют 1 е4 е5 белыми, 1 часть</p>
+                </div>
+            </li>
+            <li class="course-bar__item done">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 2</h4>
+                  <p>Дебют белыми 1.е4е5<br>Задачи для решения по первой лекции</p>
+                </div>
+            </li>
+            <li class="course-bar__item done">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 3</h4>
+                  <p>дебют белыми 1, е4 е5</p>
+                </div>
+            </li>
+            <li class="course-bar__item current">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 4</h4>
+                  <p>Дебют белыми 1.е4 е5.<br>
+                    Решаем задачи по пройденной теме</p>
+                </div>
+            </li>
+            <li class="course-bar__item">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 5</h4>
+                  <p>Решаем задачи с маневром черных</p>
+                </div>
+            </li>
+            <li class="course-bar__item">
+                <label>
+                  <img src="./img/succes-icon.svg" alt="succes icon">
+                  <input type="checkbox" value="1">
+                </label>
+                <div class="course-bar__block">
+                  <h4>Урок 6</h4>
+                  <p>Решаем задачи с маневром черных</p>
+                </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="lessons">
@@ -818,7 +818,7 @@
             </div>
           </div>
           <!-- Урок 2 -->
-          <div class="lessons__block current">
+          <div class="lessons__block">
             <div class="lessons__info">
               <p>Именно так: Идея на взятие ладьи сыграть Фf4 (h4) и далее на Kph7 подключить слона в атаку</p>
               <div class="lessons__button-case">
@@ -1354,7 +1354,7 @@
             </div>
           </div>
           <!-- Урок 3 -->
-          <div class="lessons__block current">
+          <div class="lessons__block ">
             <div class="lessons__info">
               <p>Именно так: Идея на взятие ладьи сыграть Фf4 (h4) и далее на Kph7 подключить слона в атаку</p>
               <div class="lessons__button-case">
@@ -1890,7 +1890,7 @@
             </div>
           </div>
           <!-- Урок 4 -->
-          <div class="lessons__block current">
+          <div class="lessons__block ">
             <div class="lessons__info">
               <p>Именно так: Идея на взятие ладьи сыграть Фf4 (h4) и далее на Kph7 подключить слона в атаку</p>
               <div class="lessons__button-case">

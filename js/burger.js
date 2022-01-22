@@ -30,10 +30,25 @@ function checkResolution() {
 }
 checkResolution()
 
+function checkBarHeight(){
+  let Bar = document.getElementById("course-bar")
+  let Header = document.getElementById("course-bar__header")
+  let Body = document.getElementById("course-bar__body")
+  let bodyHeight = Bar.offsetHeight - Header.offsetHeight;
+  if (window.matchMedia("(min-width: 1100px)").matches) {
+    if (Bar.offsetHeight < window.offsetHeight){
+    }else{
+      Body.style.height =  bodyHeight + 'px';
+    }
+  }
+  
+}
+checkBarHeight()
 
 // Защита от ломания страницы из-за переворота экрана или смены масштаба
 window.addEventListener("resize", function () {
   console.log("Resolution was changed");
   checkResolution();
+  checkBarHeight()
 });
 

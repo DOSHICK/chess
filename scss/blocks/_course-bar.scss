@@ -1,28 +1,31 @@
 .course-bar {
-  position: relative;
   z-index: 1;
   width: 370px;
-  padding: 70px 0px 40px 0px;
   box-shadow: 10px 0px 50px -20px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  position: fixed;
+  max-height: 100vh;
 
   @media (min-width:1400px) {
     min-width: 370px;
   }
 
-  @media (max-width:1250px) {
-    padding: 40px 0px 40px 0px;
-  }
-
   @media (max-width:1100px) {
-    padding: 28px 40px 18px 30px;
+    position: relative;
     width: 100%;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.06);
   }
 
   .course-bar__header {
+    padding: 70px 0px 0px 0px;
+
+    @media (max-width:1250px) {
+      padding: 40px 0px 0px 0px;
+    }
+
     @media (max-width:1100px) {
       width: 100%;
-
+      padding: 28px 40px 0px 30px;
     }
   }
 
@@ -94,20 +97,24 @@
   }
 
   &__body {
+    overflow: scroll;
     @media (max-width:1100px) {
       display: none;
+      width: 370px;
     }
   }
-  &__body.burger-visible{
+
+  &__body.burger-visible {
     @media (max-width:1100px) {
       background: #fff;
       display: block;
-      position: absolute; 
+      position: absolute;
       top: 75px;
       left: 0;
       width: 370px;
     }
-    @media (max-width:450px){
+
+    @media (max-width:450px) {
       width: 100%;
     }
   }
