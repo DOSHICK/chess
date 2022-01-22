@@ -52,5 +52,3 @@ window.addEventListener("resize", function () {
   checkBarHeight()
 });
 
-
-alert(window.innerWidth)
