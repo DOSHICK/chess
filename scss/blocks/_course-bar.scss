@@ -97,7 +97,7 @@
   }
 
   &__body {
-    overflow: scroll;
+    overflow-y: scroll;
     @media (max-width:1100px) {
       display: none;
       width: 370px;
