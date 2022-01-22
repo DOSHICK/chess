@@ -1,0 +1,35 @@
+footer {
+  padding: 20px 30px 30px 70px;
+  background: #f7f8f9;
+
+
+  .footer__nav {
+    .footer__list {
+      display: flex;
+      flex-direction: row;
+
+      // align-items: center;
+      .footer__item {
+        background: url("../img/footer-seporator.svg") no-repeat;
+        background-position: 0% 50%;
+        padding: 0px 0px 0px 5px;
+        margin: 0px 0px 0px 5px;
+
+        &:first-child {
+          background: none;
+          padding: 0px 0px 0px 0px;
+        }
+
+        a {
+          transition: all 0.3s ease 0s;
+          color: #989695;
+          &:hover{
+          color: #5c5c5c;
+          }
+        }
+      }
+    }
+
+  }
+
+}

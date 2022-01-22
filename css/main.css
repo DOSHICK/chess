@@ -104,13 +104,6 @@ body {
 .wrapper {
   height: 100%;
   width: 100%;
-}
-
-.lessons {
-  width: 100%;
-}
-
-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,12 +114,16 @@ main {
 }
 
 @media (max-width: 1100px) {
-  main {
+  .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.lessons {
+  width: 100%;
 }
 
 h2 {
@@ -289,6 +286,7 @@ h4 {
 
 .course-bar__body {
   overflow-y: scroll;
+  direction: rtl;
 }
 
 @media (max-width: 1100px) {
@@ -296,6 +294,10 @@ h4 {
     display: none;
     width: 370px;
   }
+}
+
+.course-bar__body > * {
+  direction: ltr;
 }
 
 @media (max-width: 1100px) {
@@ -408,7 +410,7 @@ h4 {
 }
 
 .lessons {
-  margin-left: 360px;
+  margin-left: 340px;
   z-index: 0;
 }
 
@@ -573,7 +575,7 @@ p.task__info {
 }
 
 .lessons-body {
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px 0px 60px;
   z-index: 0;
   width: 100%;
   background: #f7f8f9;
@@ -711,8 +713,8 @@ p.task__info {
 }
 
 .lessons-body .lessons__block .lessons__main .lessons__chess {
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
 }
 
 .lessons-body .lessons__block .lessons__main .lessons__chess img {
@@ -720,10 +722,17 @@ p.task__info {
   height: 100%;
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 1350px) {
   .lessons-body .lessons__block .lessons__main .lessons__chess {
-    width: 500px;
-    height: 500px;
+    min-width: 600px;
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .lessons-body .lessons__block .lessons__main .lessons__chess {
+    min-width: 800px;
+    min-height: 800px;
   }
 }
 
@@ -734,11 +743,10 @@ p.task__info {
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .lessons-body .lessons__block .lessons__main .lessons__chess {
-    width: 500px;
-    height: 500px;
-    margin: 0px 0px 30px 0px;
+    width: 3500px;
+    height: 3500px;
   }
 }
 
@@ -815,5 +823,42 @@ p.task__info {
 
 .lessons-body .lessons__block .lessons__main .lessons__track table tr.current td.order {
   border-left: 3px #ACE281 solid;
+}
+
+footer {
+  padding: 20px 30px 30px 70px;
+  background: #f7f8f9;
+}
+
+footer .footer__nav .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer__nav .footer__list .footer__item {
+  background: url("../img/footer-seporator.svg") no-repeat;
+  background-position: 0% 50%;
+  padding: 0px 0px 0px 5px;
+  margin: 0px 0px 0px 5px;
+}
+
+footer .footer__nav .footer__list .footer__item:first-child {
+  background: none;
+  padding: 0px 0px 0px 0px;
+}
+
+footer .footer__nav .footer__list .footer__item a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #989695;
+}
+
+footer .footer__nav .footer__list .footer__item a:hover {
+  color: #5c5c5c;
 }
 /*# sourceMappingURL=main.css.map */

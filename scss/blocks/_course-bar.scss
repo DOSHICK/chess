@@ -98,10 +98,14 @@
 
   &__body {
     overflow-y: scroll;
+    direction: rtl;
     @media (max-width:1100px) {
       display: none;
       width: 370px;
     }
+  }
+  &__body > *{
+    direction: ltr;
   }
 
   &__body.burger-visible {
